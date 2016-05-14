@@ -84,15 +84,22 @@
 
 
 
-<meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Jeongho的博客">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="###Java线程学习
+定义一个任务实现Runnable接口123456789public class Output implements Runnable&amp;#123;    private int count = 10;    @Override    public void run() &amp;#123;        while (count-- &amp;gt; 0)&amp;#123;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java线程学习">
+<meta property="og:url" content="http://yoursite.com/2016/05/14/Java线程学习/index.html">
 <meta property="og:site_name" content="Jeongho的博客">
-<meta property="og:description">
+<meta property="og:description" content="###Java线程学习
+定义一个任务实现Runnable接口123456789public class Output implements Runnable&amp;#123;    private int count = 10;    @Override    public void run() &amp;#123;        while (count-- &amp;gt; 0)&amp;#123;">
+<meta property="og:image" content="http://i.imgur.com/v55tdGE.png">
+<meta property="og:image" content="http://i.imgur.com/RC5YmWS.png">
+<meta property="og:updated_time" content="2016-05-14T05:22:56.105Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Jeongho的博客">
-<meta name="twitter:description">
+<meta name="twitter:title" content="Java线程学习">
+<meta name="twitter:description" content="###Java线程学习
+定义一个任务实现Runnable接口123456789public class Output implements Runnable&amp;#123;    private int count = 10;    @Override    public void run() &amp;#123;        while (count-- &amp;gt; 0)&amp;#123;">
+<meta name="twitter:image" content="http://i.imgur.com/v55tdGE.png">
 
 
 
@@ -110,7 +117,7 @@
   };
 </script>
 
-  <title> Jeongho的博客 </title>
+  <title> Java线程学习 | Jeongho的博客 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -131,9 +138,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -230,9 +235,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
   
@@ -252,10 +257,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2016/05/14/Java线程学习/" itemprop="url">
-                  Java线程学习
-                </a>
+                Java线程学习
               
             
           </h1>
@@ -314,9 +316,7 @@
       
 
       
-        
-          
-            <p>###Java线程学习</p>
+        <p>###Java线程学习</p>
 <p>定义一个任务实现Runnable接口<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Output</span> <span class="keyword">implements</span> <span class="title">Runnable</span></span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> count = <span class="number">10</span>;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">while</span> (count-- &gt; <span class="number">0</span>)&#123;</span><br><span class="line">            System.out.println(count);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <p>主线程中调用Output的run()方法<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">    Output o = <span class="keyword">new</span> Output();</span><br><span class="line">    o.run();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <blockquote>
@@ -339,16 +339,19 @@
 </ul>
 </blockquote>
 
-          
+      
+    </div>
+
+    <div>
+      
         
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
@@ -359,16 +362,15 @@
 
       
       
-        <div class="post-eof"></div>
-      
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -376,6 +378,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -395,8 +401,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.png"
@@ -439,6 +454,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <p class="post-toc-empty">此文章未包含目录</p>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -535,6 +561,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 
